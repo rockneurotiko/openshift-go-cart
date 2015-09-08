@@ -60,8 +60,6 @@ then
     echo " done"
 fi
 
-echo 'export PATH=$PATH' > $build/.profile.d/go.sh
-
 echo $GOROOT > $OPENSHIFT_GO_DIR/env/GOROOT
 echo $GOPATH > $OPENSHIFT_GO_DIR/env/GOPATH
 echo "$HOME/bin:$GOROOT/bin" > $OPENSHIFT_GO_DIR/env/OPENSHIFT_GO_PATH_ELEMENT
